@@ -51,3 +51,19 @@ ticks-per:
   ambient-spawns: 1
   autosave: 6000
 ```
+
+### spigot.yml
+```
+advancements:
+  disable-saving: true
+  disabled:
+  - minecraft:story/disabled
+bungeecord: false
+netty-threads: 4
+log-villager-deaths: false
+log-named-deaths: true
+players:
+  disable-saving: true
+stats:
+  disable-saving: true
+```
