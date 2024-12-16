@@ -66,4 +66,23 @@ players:
   disable-saving: true
 stats:
   disable-saving: true
+world-settings:
+  below-zero-generation-in-existing-chunks: true
+  view-distance: default
+  simulation-distance: default
+  merge-radius:
+      item: 3.5
+      exp: 4.0
+  mob-spawn-range: 8
+  nerf-spawner-mobs: true
+  wither-spawn-sound-radius: 150
+  end-portal-sound-radius: 150
+  dragon-death-sound-radius: 150
+  ticks-per:
+      hopper-transfer: 8
+      hopper-check: 1
+  hopper-amount: 1
+  entity-activation-range:
+    tick-inactive-villagers: false
+    ignore-spectators: true
 ```
