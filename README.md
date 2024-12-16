@@ -1,8 +1,9 @@
 # server-config-guide
-Guide on how to install and config a new server
+Guide on how to install and config a new server. Also keeps track of the changes we did to the servers over time, clearly communicating differing server settings to the players.
 
+This repository will also be reworked soon!
 
-## Survival
+## Survival (Minecraft Empires)
 ### server.properties
 ```
 allow-nether=true
@@ -85,4 +86,87 @@ world-settings:
   entity-activation-range:
     tick-inactive-villagers: false
     ignore-spectators: true
+```
+
+### paper-world-defaults.yml
+```
+anticheat:
+  anti-xray:
+    enabled: true
+    engine-mode: 3
+    hidden-blocks:
+    - coal_ore
+    - deepslate_coal_ore
+    - copper_ore
+    - deepslate_copper_ore
+    - raw_copper_block
+    - diamond_ore
+    - deepslate_diamond_ore
+    - gold_ore
+    - deepslate_gold_ore
+    - iron_ore
+    - deepslate_iron_ore
+    - raw_iron_block
+    - lapis_ore
+    - deepslate_lapis_ore
+    - redstone_ore
+    - deepslate_redstone_ore
+    lava-obscures: false
+    max-block-height: 320
+    replacement-blocks:
+    - diamond_ore
+    - deepslate_diamond_ore
+    - amethyst_block
+    - copper_ore
+    - deepslate_copper_ore
+    - raw_copper_block
+    - andesite
+    - budding_amethyst
+    - calcite
+    - coal_ore
+    - deepslate_coal_ore
+    - deepslate
+    - diorite
+    - dirt
+    - emerald_ore
+    - deepslate_emerald_ore
+    - granite
+    - gravel
+    - oak_planks
+    - smooth_basalt
+    - stone
+    - tuff
+    update-radius: 3
+    use-permission: false
+  obfuscation:
+    items:
+      hide-durability: false
+      hide-itemmeta: false
+      hide-itemmeta-with-visual-effects: false
+tick-rates:
+  behavior:
+    villager:
+      validatenearbypoi: -1
+  container-update: 1
+  dry-farmland: 1
+  grass-spread: 4
+  mob-spawner: 2
+  sensor:
+    villager:
+      secondarypoisensor: 40
+  wet-farmland: 1
+misc:
+  alternate-current-update-order: HORIZONTAL_FIRST_OUTWARD
+  disable-end-credits: true
+  disable-relative-projectile-velocity: false
+  disable-sprint-interruption-on-attack: false
+  light-queue-size: 20
+  max-leash-distance: default
+  redstone-implementation: ALTERNATE_CURRENT
+  shield-blocking-delay: 5
+  show-sign-click-command-failure-msgs-to-player: false
+  update-pathfinding-on-block-update: true
+hopper:
+  cooldown-when-full: true
+  disable-move-event: true
 ```
