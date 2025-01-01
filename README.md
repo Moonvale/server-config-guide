@@ -1,3 +1,6 @@
+> # Todo: Move into development documentation!
+
+
 # server-config-guide
 Guide on how to install and config a new server. Also keeps track of the changes we did to the servers over time, clearly communicating differing server settings to the players.
 
